@@ -16,8 +16,8 @@
     </title>
     <link rel="shortcut icon" type="image/ico" href="assets/favicon.png">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/simssa.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/simssa.css">
   </head>
   <body id ="Site" class='layout-reverse theme-base-sm sidebar-overlay'>
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
@@ -32,27 +32,26 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="">MIRAI</a>
+          <a class="navbar-brand" href="../">MIRAI</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav nav mr-auto">
-            <li><a href="about">About</a></li>
-            <li><a href="people">Participants</a></li>
+            <li><a href="../about">About</a></li>
+            <li><a href="../people">Participants</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">Activities<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href='activities/impact/' target='_top' >Our impact</a></li>
-                <li><a href='activities/media/' target='_top' >Media</a></li>
-                <li><a href='activities/presentations/' target='_top' >Presentations</a></li>
-                <li><a href='activities/publications/' target='_top' >Publications</a></li>
+                <li><a href='../activities/impact/' target='_top' >Our impact</a></li>
+                <li><a href='../activities/media/' target='_top' >Media</a></li>
+                <li><a href='../activities/presentations/' target='_top' >Presentations</a></li>
+                <li><a href='../activities/publications/' target='_top' >Publications</a></li>
               </ul>
             </li>
-            <li><a href="contact">Contact us</a></li>
+            <li><a href="../contact">Contact us</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <script src="http:https:https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <section class="headerimage">
       <div class="container">
         <br>
@@ -76,7 +75,7 @@
           <p>There are two main research axes in this program: <strong>Content</strong> and <strong>Searching &amp; Analysis</strong>. The Content axis collects and organizes music-related documents in various formats (e.g., scores, audio, and biographical information about composers) so that users can find what they are looking for easily and efficiently. It encompasses projects concerning the improvement of OMR technology (Burgoyne et al. 2009, 2008, 2007a; Charalampos et al. 2014; Fujinaga 2004; Hankinson 2014; Hankinson et al. 2012a, 2010), metadata management (Angeles et al. 2010), biographical data acquisition (prosopography) (Fujinaga 2014, Weiss et al. 2010), and audio feature extraction (McKay et al. 2006a; McEnnis et al. 2006a). Until now, the only OMR technology available was proprietary “black box” software that cannot be improved or adjusted for different types of notation. Our OMR software is open-source and can be trained to work on different types of notation.</p>
           <p>The Searching &amp; Analysis axis creates tools and techniques for searching and analyzing the information collected from the Content axis. From audio sources, we are creating tools for automatic genre classification (McKay et al. 2010b, 2009a, 2009b, 2006c, 2005a, 2005b, 2005c, 2004), harmonic analysis (Burgoyne et al. 2013, 2011, 2007b), performance analysis (Devaney et al. 2011a, 2011b, 2011c), and timbre recognition (Fujinaga et al. 2000). From scores in symbolic notation we are developing tools for searching and analyzing melody, harmony, counterpoint, and structure (Cumming et al. 2015a; Fujinaga et al. 2013). From text documents about music we are developing ways to link data that will reveal new connections among musicians, composers, patrons, places, and institutions.</p>
           <p>Both axes examine how users interact with digital music and continually improve the tools we have developed (Hankinson et al. 2012b, 2012c, 2009, Burlet et al. 2012). Figure 1 shows the overall structure with examples of research projects under each axis.</p>
-          <p><img src="assets/img/Structure_of_MIRAI.png" alt="" /></p>
+          <p><img src="../assets/img/Structure_of_MIRAI.png" alt="" /></p>
           <p><br /></p>
           <p>The two research axes are independent but complementary. Content that is not searchable in intelligent ways is not useful. Search and analysis algorithms require content to work on. Work can proceed on the two axes independently, but ultimately it is the combination that makes our research program valuable. The “User Interface” box in Figure 1 points to a feature of our program that applies to both axes: tools that are easy to use have the potential for broad impact. With our complementary research axes, the MIRAI team is building efficient and user-friendly tools to accommodate large-scale distributed processing. With these tools, libraries and archives anywhere in the world will be able to process their music collections and make them available to wider audiences for study, performance, and appreciation.</p>
           <p><br /></p>
@@ -106,14 +105,15 @@
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
         $('.icon_rotation').on({
           'click': function () {
             var origsrc = $(this).attr('src');
             var src = '';
-            if (origsrc == 'assets/0-expand_off.png') src = 'assets/0-expand_on.png';
-            if (origsrc == 'assets/0-expand_on.png') src = 'assets/0-expand_off.png';
+            if (origsrc == '../assets/0-expand_off.png') src = '../assets/0-expand_on.png';
+            if (origsrc == '../assets/0-expand_on.png') src = '../assets/0-expand_off.png';
             $(this).attr('src', src);
           }
         });
@@ -121,7 +121,6 @@
     </script>
     <footer>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
   </body>
 </html>
